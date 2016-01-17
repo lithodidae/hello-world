@@ -1,0 +1,20 @@
+{# _myapp/templates/index.html_ #}
+
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+	<h1>Index</h1>
+	<p class="important">
+	  Welcome to my awesome homepage.
+	</p>
+    {% include "section.html" ignore missing %}
+</div>
+{% endblock %}
